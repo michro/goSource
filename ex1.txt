@@ -1,0 +1,22 @@
+实验1.1
+题目：统计文件中单词的个数
+要求：
+1.考虑文件的字符编码
+2.考虑单词的构成规范
+3.考虑并行机制的应用
+4.分析串并行实现的效率
+5.并行优化体会并行的特性
+参考：
+算法伪代码
+Input File f //文本文件
+Output Map wp//以单词为键，个数为值的键值对
+word = ""
+for each char a in f{
+	if(a is legal word part){
+		word+=a
+	}else{
+		add the number of word in wp
+		word = ""
+	}
+}
+return wp
